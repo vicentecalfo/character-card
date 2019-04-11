@@ -1,0 +1,20 @@
+<div class="content">
+    <div class="form-field">
+        <select (change)="chooseCharacter($event)">
+            <option>Choose a character ...</option>
+            <ng-container *ngFor="let character of characters; index as i;">
+                <option [value]="i">
+                    {{ character.character }} ({{  character.release.jp }})
+                </option>
+            </ng-container>
+        </select>
+    </div>
+    <ez-character-card
+        *ngIf="character"
+        serie="{{ character.amiiboSeries }}"
+        name="{{ character.name }}"
+        character="{{ character.character }}"
+        image="{{ character.image }}"
+        release="{{ character.release.jp }}"
+    ></ez-character-card>
+</div>

@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900');
+
+@mixin elevation() {
+    -webkit-box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.28);
+    -moz-box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.28);
+    box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.28);
+}
+
+.character-card{
+    border-radius:5px;
+    width:400px;
+    height: 200px;
+    @include elevation();
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+
+    .info{
+        font-weight: 900;
+        padding:20px;
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        .name{
+            h1{
+                font-size: 1.8rem;
+                margin:0;
+                sup{
+                    font-size: 0.5rem;
+                }
+            }
+
+            h2{
+                font-size: 1.2rem;
+                margin:0;
+            }
+        }
+
+        .release{
+            font-weight: 400;
+            font-size: 0.8rem;
+        }
+
+         .logo{
+             width:80%;
+         }
+    }
+
+    .image{
+        background-repeat: no-repeat;
+        background-position: 10px -10px;
+        background-size: cover;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+}
