@@ -11,6 +11,12 @@ Para ilustrar os exemplos usei uma API com os personagens Amiibo ([O que é Amii
 
 [Página de demonstração.](https://vicentecalfo.github.io/character-card/dist/character-card/)
 
+![Exemplo 1](https://vicentecalfo.github.io/character-card/dist/character-card/assets/sample_1.png)
+
+![Exemplo 2](https://vicentecalfo.github.io/character-card/dist/character-card/assets/sample_2.png)
+
+![Exemplo 3](https://vicentecalfo.github.io/character-card/dist/character-card/assets/sample_3.png)
+
 ## Recursos
 1. [API do banco de dados das miniaturas Amiibo (amiiboapi).](https://www.amiiboapi.com/)
 2. [Módulo para extrair a paleta de cores da imagem (node-vibrant)](https://github.com/akfish/node-vibrant)
